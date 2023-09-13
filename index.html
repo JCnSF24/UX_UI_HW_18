@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         /* Your existing styles */
 
@@ -126,11 +128,23 @@
             margin: 0 auto;
         }
 
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
+        /* Add these styles to match the box sizing */
+        .skillContainer {
+            max-width: 30%;
+            /* Adjust the width as needed */
+            height: 100%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            /* Add borders or other styling as desired */
+        }
+
+        /* Style for h1, h3, p, and img tags inside .skillContainer can be added here */
+
+        .viewAllProjects {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -151,8 +165,6 @@
         <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t31.18172-8/19800584_10155043186232851_8689622010352302918_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=MfZU7518jR0AX_1hu6a&_nc_ht=scontent-sjc3-1.xx&oh=00_AfA6zgtlFte2nhD1BBWX4SB16HRPVj4_gSlLGIuW_V8BZA&oe=65133AA1"
             alt="No Parking">
     </section>
-
-
 
     <div class="row">
         <div class="column">
@@ -175,13 +187,173 @@
                     find me chasing waves and munching on the best tacos around. From canvas to surfboard, I've
                     transitioned my passion for aesthetics, bringing together my love for all things creative. Whether
                     it's riding the perfect wave or savoring a mouthwatering taco, I'm all about embracing the vibrant
-                    beauty life has to offer.
-
+                    beauty life has to offer.</p>
                 <p><button class="button">Contact</button></p>
             </div>
         </div>
     </div>
+</body>
 
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My UX Skills</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* My UX Skills section coded using CSS flex */
+        .mySkills {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .flexContainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .skillContainer {
+            max-width: 30%;
+            /* Adjust the width as needed */
+            height: 100%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            /* Add borders or other styling as desired */
+        }
+
+        /* Style for h1, h3, p, and img tags inside .skillContainer can be added here */
+
+        .viewAllProjects {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="mySkills">
+        <h1>My UX Skills</h1>
+        <div class="flexContainer">
+            <div class="skillContainer">
+                <img src="skill1.png" alt="Skill 1 Icon">
+                <h3>Skill 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus sapien vel nunc consequat.</p>
+            </div>
+            <div class="skillContainer">
+                <img src="skill2.png" alt="Skill 2 Icon">
+                <h3>Skill 2</h3>
+                <p>Nulla facilisi. Curabitur at dapibus orci. Vivamus tincidunt nunc ut arcu tristique fermentum.</p>
+            </div>
+            <div class="skillContainer">
+                <img src="skill3.png" alt="Skill 3 Icon">
+                <h3>Skill 3</h3>
+                <p>Phasellus congue tellus eget neque varius, sit amet rhoncus nulla fringilla. This should stretch the
+                    box</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* My Work Section Constructed using CSS Grid */
+        .myWork {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .workGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two columns */
+            grid-gap: 20px;
+            justify-content: center;
+            grid-template-areas:
+                "project1 project2"
+                "project3 project4";
+        }
+
+        .workItem {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            /* Add borders or other styling as desired */
+        }
+
+        /* Apply named grid areas to your workItem divs */
+        .workItem:nth-child(1) {
+            grid-area: project1;
+        }
+
+        .workItem:nth-child(2) {
+            grid-area: project2;
+        }
+
+        .workItem:nth-child(3) {
+            grid-area: project3;
+        }
+
+        .workItem:nth-child(4) {
+            grid-area: project4;
+        }
+
+        /* Additional styling for h4, p, img, and button tags inside .workItem can be added here */
+
+        .viewAllProjects {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="myWork">
+        <h1>My Work</h1>
+        <div class="workGrid">
+            <div class="workItem">
+                <img src="project1.jpg" alt="Project 1">
+                <h4>Project 1</h4>
+                <p>Description of Project 1</p>
+                <button>View Project</button>
+            </div>
+            <div class="workItem">
+                <img src="project2.jpg" alt="Project 2">
+                <h4>Project 2</h4>
+                <p>Description of Project 2</p>
+                <button>View Project</button>
+            </div>
+            <div class="workItem">
+                <img src="project3.jpg" alt="Project 3">
+                <h4>Project 3</h4>
+                <p>Description of Project 3</p>
+                <button>View Project</button>
+            </div>
+            <div class="workItem">
+                <img src="project4.jpg" alt="Project 4">
+                <h4>Project 4</h4>
+                <p>Description of Project 4</p>
+                <button>View Project</button>
+            </div>
+        </div>
+        <h3 class="viewAllProjects">View all projects.</h3>
+    </section>
 </body>
 
 </html>
