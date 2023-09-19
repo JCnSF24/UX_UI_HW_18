@@ -121,6 +121,21 @@
             margin: 0;
         }
 
+        /* Add this CSS for the image animation */
+        .heroImg img {
+            width: 75%;
+            /* 25% smaller */
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease-in-out;
+            /* Add a smooth transition effect */
+        }
+
+        .heroImg img:hover {
+            transform: scale(1.1);
+            /* Scale the image up by 10% on hover */
+        }
+
         .heroImg img {
             width: 75%;
             /* 25% smaller */
@@ -138,6 +153,27 @@
             text-align: center;
             border: 1px solid #ccc;
             /* Add borders or other styling as desired */
+        }
+
+        .skillContainer {
+            max-width: 30%;
+            /* Adjust the width as needed */
+            height: 100%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            /* Add borders or other styling as desired */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            /* Add transitions for transform and box-shadow */
+        }
+
+        /* Scale and add shadow on hover */
+        .skillContainer:hover {
+            transform: scale(1.05);
+            /* Slightly scale up on hover */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            /* Add a subtle shadow on hover */
         }
 
         /* Style for h1, h3, p, and img tags inside .skillContainer can be added here */
