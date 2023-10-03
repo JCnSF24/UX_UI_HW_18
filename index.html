@@ -4,6 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Your existing styles here */
+
+        /* Centered GIF container styles */
+        #gif-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            /* Ensure it's above the hero image */
+        }
+
+        /* Adjust GIF width as needed */
+        #gif {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>I AM JARRETT</h1>
+    </div>
+    <nav>
+        <!-- Your navigation menu here -->
+    </nav>
+    <section class="heroImg">
+        <!-- Use a <video> element to display the GIF -->
+        <video autoplay loop id="gif">
+            <source src="your-gif-file.gif" type="video/gif">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <!-- Your content here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Centered GIF container -->
+    <div id="gif-container">
+        <video autoplay loop id="gif">
+            <source src="your-gif-file.gif" type="video/gif">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- jQuery code for showing/hiding the GIF container -->
+    <script>
+        $(document).ready(function () {
+            // Hide the GIF container initially
+            $("#gif-container").hide();
+        });
+    </script>
+</body>
+
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
@@ -198,8 +268,7 @@
         </ul>
     </nav>
     <section class="heroImg">
-        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t31.18172-8/19800584_10155043186232851_8689622010352302918_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=MfZU7518jR0AX_1hu6a&_nc_ht=scontent-sjc3-1.xx&oh=00_AfA6zgtlFte2nhD1BBWX4SB16HRPVj4_gSlLGIuW_V8BZA&oe=65133AA1"
-            alt="No Parking">
+        <img src="images/Screenshot 2023-09-13 at 11.40.57 PM.png" alt="No Parking">
     </section>
 
     <div class="row">
